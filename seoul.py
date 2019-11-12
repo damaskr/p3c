@@ -12,14 +12,14 @@ def fuck(pagenum):
     soup  = bs(html, 'html.parser')
     tr = soup.select('tbody > tr')
     for i in range(len(tr)):
-        if "방과후" in tr[i].select('td')[4].text.strip():
+        if tr[i].select('td')[4].text.strip():
             result[0].append(tr[i].select('td')[1].text.strip())
             result[1].append(tr[i].select('td')[2].text.strip())
             result[2].append(tr[i].select('td')[4].text.strip())
-            #result[3].append(tr[i].get('href'))
+
     for i in range(len(result[0])):
-        print(result[0][i], result[1][i], result[2][i])
-        #, result[3][i])
+        if "ddd" in result[2][i]
+            print(result[0][i], result[1][i], result[2][i]))
 
 
 fuck(1)
