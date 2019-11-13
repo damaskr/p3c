@@ -22,9 +22,9 @@ def seoul(pagenum):
         if "방과후" in result[2][i]: #Only print Afterschool
             print(result[0][i],result[1][i], result[2][i], result[3][i])
 #each pagenum in seoul function will be changed
+
 seoul(1)
-seoul(11)
-seoul(21)
-seoul(31)
-seoul(41)
-seoul(51)
+for i in range(1, 10):
+    k=10*i
+    seoul(k+1)
+
