@@ -30,10 +30,11 @@ def afterschool(pagenum):
 
 def output():
     string = ''
-    for i in range(1,5):
+    for i in range(0,5):
         out = afterschool(10*i+1)
         for j in range(len(out[0])):
-            string += '\n' +  str(out[0][j]) + '    ' + str(out[1][j]) + '  ' +str(out[2][j]) + '   '  + str(out[3][j]) + '\n'
+            string += str(out[0][j]) + str(out[1][j]) + str(out[2][j]) # + str(out[3][j])
+        string += "\n"
     return string
 
 #each pagenum in seoul function will be changed

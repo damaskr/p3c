@@ -5,5 +5,5 @@ from . import main1
 
 def index(request):
     row = main1.output()
-    return HttpResponse(row)
+    return render(request, 'seoul/index.html', )
             
